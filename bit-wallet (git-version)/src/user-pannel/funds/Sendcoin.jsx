@@ -66,7 +66,7 @@ const SendCoin = () => {
   };
  
   return (
-   <div className="flex justify-center items-center min-h-screen  px-4">
+   <div className="flex justify-center items-center   px-4">
   <div className="bg-white shadow-xl rounded-2xl p-6 w-full max-w-lg space-y-6">
     <h2 className="text-2xl font-bold text-center ">Send Coin</h2>
 
@@ -78,6 +78,9 @@ const SendCoin = () => {
     </div>
 
     <div>
+      <p className="text-sm text-gray-700">
+        <span className="font-semibold">Balance (ETH):</span> {balance ?? 'Loading...'}
+      </p>
       <p className="text-sm text-gray-700">
         <span className="font-semibold">Balance (WEI):</span> {balanceWei ?? 'Loading...'}
       </p>
